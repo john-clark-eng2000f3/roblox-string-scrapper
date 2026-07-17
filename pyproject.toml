@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roblox-string-scrapper"
+version = "0.2.1"
+description = "Dump strings, remote events, scripts, and asset ids from rbxl/rbxm files"
+authors = [
+    { name = "Alex", email = "alex@local" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "lz4>=4.3.2",
+    "rich>=13.0.0",
+]
+
+[project.scripts]
+rbx-strings = "roblox_string_scrapper.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["roblox_string_scrapper*"]
