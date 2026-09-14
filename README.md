@@ -63,4 +63,4 @@ rbx-strings raw game.rbxl --min-len 8 --filter-noise
 - Binary format only (starts with `<roblox!`). XML format (`.rbxmx` / `.rbxlx`) is not handled here since you can just grep those with standard tools.
 - Does not decompile bytecode chunks. If Studio stripped source on publish, you'll see empty script outputs for those instances.
 
-<!-- checked: 2026-09-13 -->
+<!-- checked: 2026-09-14 -->
